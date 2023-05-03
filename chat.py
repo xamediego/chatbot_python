@@ -35,7 +35,6 @@ while True:
     X = bag_of_words(sentence, all_words)
 
     X = X.reshape(1, X.shape[0])
-    print(X)
     X = torch.from_numpy(X)
 
     output = model(X)
